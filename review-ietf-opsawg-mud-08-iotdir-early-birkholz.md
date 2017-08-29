@@ -2,13 +2,13 @@
 
 ## Draft Summary
 
-This drafts defines a canonical way to compose a URI that points to a specific
+This draft defines a canonical way to compose a URI that points to a specific
 resource called a MUD file. A MUD file is a text resource that contains
 imperative guidance in the form of YANG-based ACL policies represented in JSON.
 The imperative guidance is intended to be applied to things that can be
 identified by the segments of the MUD URI via a specific controller. The version
 of MUD is a component (segment) of the MUD URI and there are three examples in
-what to embed a MUD URI (DevID, DHCP, and LLPDU) in.
+what to embed a MUD URI in (DHCP option, X.509 extenstion, and LLDP extension).
 
 ## Comments on General Topics
 
