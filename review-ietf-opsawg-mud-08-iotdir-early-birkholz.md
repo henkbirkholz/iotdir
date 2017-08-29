@@ -8,7 +8,7 @@ imperative guidance in the form of YANG-based ACL policies represented in JSON.
 The imperative guidance is intended to be applied to things that can be
 identified by the segments of the MUD URI via a specific controller. The version
 of MUD is a component (segment) of the MUD URI and there are three examples in
-what to embed a MUD URI in (DHCP option, X.509 extenstion, and LLDP extension).
+what to embed a MUD URI in (DHCP option, X.509 extension, and LLDP extension).
 
 ## Comments on General Topics
 
@@ -108,7 +108,18 @@ Additionally, including a variable in an immutable container, e.g. DevID, seems
 to negate the intend of it being a variable? Maybe this should be highlighted in
 the upcoming section that illustrates what the "extra" query option is for?
 
+### Signing MUD files
+
+The given openssl example basically allows for every kind of certificate- or
+key-type. Is that intentional? While most individuals will be able to inflate
+"mancertfile" or "mankey" to manufacturer certificate and manufacturer key,
+respectively. I strongly recommend to provide more guidance here, especially in
+regard to command parameters and appropriate hash and cipher algorithms with a
+low footprint. Providing examples here will be beneficial (maybe ECDSA & EDDSA).
+
 ## Nits
 
 What does the expression "relative to XML"  intends to convey in "JSON is used
 as a serialization for compactness and readability, relative to XML."?
+
+%s/Application\/pkcs7-signature/application\/pkcs7-signature/g
